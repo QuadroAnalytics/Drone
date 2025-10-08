@@ -61484,40 +61484,8 @@ function toFixed(num, dec=4){
   return s.replace(/(\.\d*?[1-9])0+$/,'$1').replace(/\.0+$/,'');
 }
 
-let Init = 0;
-function updateScene() {
-
-  updateDrone();
-
-
-  if(drone!= undefined){
-    if(Init == 0){
-          initDronePlayback(moveLog, drone, 1.0);
-          Init = 1;
-    }
-      const offset = new Vector3(-0.75, 0.75, 0); 
-    camera.position.copy(drone.position).add(offset);
-
-    camera.lookAt(drone.position);
-
-    console.log('Run');
-
-     updateLogUI(tPlayback);
-     updateAltitudeUI(tPlayback);
-     updateJoystickUI(tPlayback);
-     updateENUVelocityUI(tPlayback);
-     updateENURadarUI(tPlayback);
-  }
-
-
-  // Szene zeichnen
-  renderer.render(scene, camera);
-
-  // schlicht rekursiv, ohne unnötige Parameter
-  requestAnimationFrame(updateScene);
-}
-
 const loader = new GLTFLoader();
+let initOBJ = 0;
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath(`${"/"}draco/`);
 loader.setDRACOLoader(dracoLoader);
@@ -61546,12 +61514,48 @@ function importGLTFModel(url, position = { x: 0, y: 0, z: 0 }, scale = 1, rotati
       scene.add(model);
       console.log(model);
       console.log(`✅ GLTF model loaded: ${url}`);
+      initOBJ = 1;
     },
     void 0,
     (error) => {
       console.error(`❌ Error loading GLTF model: ${url}`, error);
     }
   );
+}
+
+let Init = 0;
+function updateScene() {
+
+  updateDrone();
+
+  if(initOBJ && initLog ==1){
+    if(Init == 0){
+      setDrone(scene.getObjectByName('drone'));
+      console.log(scene.getObjectByName('drone'));
+          
+      initDronePlayback(moveLog, drone, 1.0);
+      Init = 1;
+    }
+    const offset = new Vector3(-0.75, 0.75, 0); 
+    camera.position.copy(drone.position).add(offset);
+
+    camera.lookAt(drone.position);
+
+    console.log('Run');
+
+     updateLogUI(tPlayback);
+     updateAltitudeUI(tPlayback);
+     updateJoystickUI(tPlayback);
+     updateENUVelocityUI(tPlayback);
+     updateENURadarUI(tPlayback);
+  }
+
+
+  // Szene zeichnen
+  renderer.render(scene, camera);
+
+  // schlicht rekursiv, ohne unnötige Parameter
+  requestAnimationFrame(updateScene);
 }
 
 async function loadLog(url) {
@@ -61843,6 +61847,8 @@ function donwloadCSVFiles () {
     downloadAllSeparate(logData.info.frameTimeStates);
 }
 
+let initLog = 0;
+
 let renderer, scene, camera, sizeCage,floor, pointLight2,
     drone, helper;
 
@@ -62000,11 +62006,18 @@ console.log(logData);
 
 
 const moveLog = extractMovementData(logData);
+initLog = 1;
 
 console.log(JSON.stringify(logData.info.frameTimeStates[0]));
 console.log('test');
 console.log(JSON.stringify(logData.summary));
-drone = scene.getObjectByName('drone');
+// Beispiel: erste Pose in deiner Szene anwenden
+
+
+
+function setDrone(value){
+    drone = value;
+}
 // const files = makeSeparateCsvFiles(logData.info.frameTimeStates);
 
 
