@@ -61988,9 +61988,9 @@ console.log(scene);
 
 
 // <-- hier die .gltf laden, NICHT .bin
-importGLTFModel('/models/scene.gltf', { x: 0, y: 0, z: 0 }, 1);
+importGLTFModel('/Drone/models/scene.gltf', { x: 0, y: 0, z: 0 }, 1);
 
-const logData = await loadLog('/logs/logDrone.json');
+const logData = await loadLog('/Drone/logs/logDrone.json');
 console.log(logData);
 
 
