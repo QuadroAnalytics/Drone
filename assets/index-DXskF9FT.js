@@ -61484,12 +61484,17 @@ function toFixed(num, dec=4){
   return s.replace(/(\.\d*?[1-9])0+$/,'$1').replace(/\.0+$/,'');
 }
 
+let Init = 0;
 function updateScene() {
 
   updateDrone();
 
 
   if(drone!= undefined){
+    if(Init == 0){
+          initDronePlayback(moveLog, drone, 1.0);
+          Init = 1;
+    }
       const offset = new Vector3(-0.75, 0.75, 0); 
     camera.position.copy(drone.position).add(offset);
 
@@ -61988,9 +61993,9 @@ console.log(scene);
 
 
 // <-- hier die .gltf laden, NICHT .bin
-importGLTFModel('/Drone/models/scene.gltf', { x: 0, y: 0, z: 0 }, 1);
+importGLTFModel('/models/scene.gltf', { x: 0, y: 0, z: 0 }, 1);
 
-const logData = await loadLog('/Drone/logs/logDrone.json');
+const logData = await loadLog('/logs/logDrone.json');
 console.log(logData);
 
 
@@ -62000,10 +62005,6 @@ console.log(JSON.stringify(logData.info.frameTimeStates[0]));
 console.log('test');
 console.log(JSON.stringify(logData.summary));
 drone = scene.getObjectByName('drone');
-// Beispiel: erste Pose in deiner Szene anwenden
-
-
-initDronePlayback(moveLog, drone, 1.0);
 // const files = makeSeparateCsvFiles(logData.info.frameTimeStates);
 
 
