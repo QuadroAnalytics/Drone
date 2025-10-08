@@ -1,0 +1,698 @@
+{"summary": {
+ "platform": "Unknown",
+ "appVersion": [
+  1,
+  4,
+  8
+ ],
+ "batteriesInformation": {
+  "0": {
+   "index": 0,
+   "firmwareVersion": [
+    2,
+    75,
+    1,
+    29
+   ],
+   "serialNumber": "1Z3PJ3UEA306SS"
+  }
+ },
+ "camerasInformation": {
+  "0": {
+   "index": 0,
+   "firmwareVersion": [
+    5,
+    39,
+    0,
+    11
+   ],
+   "serialNumber": "42UQJ3J23A01H6"
+  }
+ },
+ "gimbalsInformation": {
+  "0": {
+   "index": 0,
+   "firmwareVersion": [
+    1,
+    0,
+    4,
+    70
+   ],
+   "serialNumber": ""
+  }
+ },
+ "remoteControllerInformation": {
+  "index": 0,
+  "firmwareVersion": [
+   4,
+   12,
+   46,
+   0
+  ],
+  "serialNumber": "396LJ41101001D"
+ },
+ "flightControllerInformation": {
+  "index": 0,
+  "firmwareVersion": [
+   3,
+   4,
+   12,
+   81
+  ],
+  "serialNumber": "3YTSJ3V0030UH7"
+ },
+ "aircraftName": "DJI Air 2S",
+ "startTime": 1630896477.54,
+ "startCoordinate": {
+  "latitude": 47.572692611901083,
+  "longitude": -122.62665824809302
+ },
+ "totalDistance": 1645.57935,
+ "totalTime": 1184.5999755859375,
+ "samplingRate": 10,
+ "maxHeight": 119.6,
+ "maxHorizontalSpeed": 14.9642906,
+ "maxVirticalSpeed": 6.1,
+ "uuid": "75e6aa60-188c-4ccf-8112-ff46e5726d4a",
+ "productType": "MavicAir2S"
+}
+, "info": {
+ "frameTimeStates": [
+  {
+   "flightControllerState": {
+    "attitude": {
+     "pitch": 23,
+     "roll": 16,
+     "yaw": -904
+    },
+    "takeoffLocationAltitude": 0,
+    "aircraftLocation": {
+     "latitude": 0,
+     "longitude": 0
+    },
+    "altitude": 0,
+    "flightMode": "GPSAtti",
+    "GPSSignalLevel": "Level0",
+    "satelliteCount": 0,
+    "remainingFlightTime": 0,
+    "batteryPercentageNeededToLandFromCurrentHeight": 0,
+    "batteryPercentageNeededToGoHome": 0,
+    "smartRTHState": "Unknown",
+    "behavior": "GoHome",
+    "isFailsafeEnabled": false,
+    "areMotorsOn": true,
+    "isHomeLocationSet": false,
+    "isLandingConfirmationNeeded": false,
+    "hasReachedMaxFlightHeight": false,
+    "hasReachedMaxFlightRadius": false,
+    "windWarning": "Unknown",
+    "countOfFlights": 1,
+    "flightLogIndex": 0,
+    "isFlying": false,
+    "smartRTHCountdown": 0,
+    "velocity": {
+     "velocityX": 0,
+     "velocityY": 0,
+     "velocityZ": 0
+    },
+    "isGPSBeingUsed": false,
+    "flightTimeInSeconds": 0,
+    "cumulativeFlightDistance": 0
+   },
+   "cameraState": {
+    "isRecording": false,
+    "isShootingSinglePhoto": false,
+    "isInserted": true,
+    "isInitializing": false,
+    "hasError": false,
+    "isVerified": true,
+    "isFull": true,
+    "isFormatted": true,
+    "isFormatting": false,
+    "isInvalidFormat": false,
+    "isReadOnly": false,
+    "totalSpaceInMB": 243827,
+    "remainingSpaceInMB": 205026,
+    "availableCaptureCount": 5314,
+    "availableRecordingTimeInSeconds": 17265,
+    "index": 0,
+    "mode": "ShootPhoto"
+   },
+   "gimbalState": {
+    "atitude": {
+     "pitch": 0,
+     "roll": 0,
+     "yaw": -89.800003051757812
+    },
+    "fineTunedRoll": 0,
+    "fineTunedPitch": 0,
+    "fineTunedYaw": 0,
+    "isRollAtStop": false,
+    "isYawAtStop": false,
+    "isPitchAtStop": false,
+    "yawRelativeToAircraftHeading": 0,
+    "mode": "YawFollow",
+    "index": 0
+   },
+   "rcHardwareState": {
+    "leftStick": {
+     "horizontalPosition": 660,
+     "verticalPosition": -660
+    },
+    "rightStick": {
+     "horizontalPosition": -660,
+     "verticalPosition": -660
+    },
+    "leftWheel": 0,
+    "rightWheel": {
+     "isPresent": true,
+     "isTurned": false,
+     "isClicked": false,
+     "value": 0
+    },
+    "flightModeSwitch": "Three",
+    "goHomeButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "recordButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "shutterButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "style": "Unknown"
+   },
+   "batteryState": {
+    "voltage": 12827,
+    "current": -1234,
+    "temperature": 25.200000000000003,
+    "cellVoltages": [],
+    "chargeRemainingInPercent": 96,
+    "lowBatteryWarningThreshold": -1,
+    "seriousLowBatteryWarningThreshold": -1,
+    "index": -1,
+    "lifetimeRemaining": 0,
+    "designCapacity": 906240,
+    "numberOfDischarges": 1792,
+    "isInSingleBatteryMode": false,
+    "fullChargeCapacity": 3318,
+    "chargeRemaining": 3173
+   },
+   "airLinkState": {
+    "downlinkSignalQuality": 0,
+    "hasDownlinkSignalQuality": false,
+    "uplinkSignalQuality": 0,
+    "hasUplinkSignalQuality": false
+   },
+   "visionState": {
+    "collisionAvoidanceEnabled": true,
+    "controlState": {
+     "isAscentLimitedByObstacle": false,
+     "isAvoidingActiveObstacleCollision": false,
+     "isBraking": false,
+     "isPerformingPrecisionLanding": false
+    },
+    "detectionStateMap": {
+     "2": {
+      "position": "Right",
+      "isSensorBeingUsed": false,
+      "systemWarning": "VisionSystemInvalid",
+      "obstacleDistanceInMeters": 0,
+      "detectionSectors": []
+     }
+    }
+   },
+   "gimbalsState": {
+    "0": {
+     "atitude": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": -89.800003051757812
+     },
+     "fineTunedRoll": 0,
+     "fineTunedPitch": 0,
+     "fineTunedYaw": 0,
+     "isRollAtStop": false,
+     "isYawAtStop": false,
+     "isPitchAtStop": false,
+     "yawRelativeToAircraftHeading": 0,
+     "mode": "YawFollow",
+     "index": 0
+    }
+   },
+   "camerasState": {
+    "0": {
+     "isRecording": false,
+     "isShootingSinglePhoto": false,
+     "isInserted": true,
+     "isInitializing": false,
+     "hasError": false,
+     "isVerified": true,
+     "isFull": true,
+     "isFormatted": true,
+     "isFormatting": false,
+     "isInvalidFormat": false,
+     "isReadOnly": false,
+     "totalSpaceInMB": 243827,
+     "remainingSpaceInMB": 205026,
+     "availableCaptureCount": 5314,
+     "availableRecordingTimeInSeconds": 17265,
+     "index": 0,
+     "mode": "ShootPhoto"
+    }
+   },
+   "batteriesState": {
+    "0": {
+     "voltage": 12827,
+     "current": -1234,
+     "temperature": 25.200000000000003,
+     "cellVoltages": [],
+     "chargeRemainingInPercent": 96,
+     "lowBatteryWarningThreshold": -1,
+     "seriousLowBatteryWarningThreshold": -1,
+     "index": -1,
+     "lifetimeRemaining": 0,
+     "designCapacity": 906240,
+     "numberOfDischarges": 1792,
+     "isInSingleBatteryMode": false,
+     "fullChargeCapacity": 3318,
+     "chargeRemaining": 3173
+    }
+   }
+  },
+  {
+   "flightControllerState": {
+    "attitude": {
+     "pitch": 23,
+     "roll": 16,
+     "yaw": -905
+    },
+    "takeoffLocationAltitude": 0,
+    "aircraftLocation": {
+     "latitude": 0,
+     "longitude": 0
+    },
+    "altitude": 0,
+    "flightMode": "MotorsJustStarted",
+    "GPSSignalLevel": "Level0",
+    "satelliteCount": 0,
+    "remainingFlightTime": 0,
+    "batteryPercentageNeededToLandFromCurrentHeight": 0,
+    "batteryPercentageNeededToGoHome": 0,
+    "smartRTHState": "Unknown",
+    "behavior": "GoHome",
+    "isFailsafeEnabled": false,
+    "areMotorsOn": true,
+    "isHomeLocationSet": false,
+    "isLandingConfirmationNeeded": false,
+    "hasReachedMaxFlightHeight": false,
+    "hasReachedMaxFlightRadius": false,
+    "windWarning": "Unknown",
+    "countOfFlights": 1,
+    "flightLogIndex": 0,
+    "isFlying": false,
+    "smartRTHCountdown": 0,
+    "velocity": {
+     "velocityX": 0,
+     "velocityY": 0,
+     "velocityZ": 0
+    },
+    "isGPSBeingUsed": false,
+    "flightTimeInSeconds": 0.10000000149011612,
+    "cumulativeFlightDistance": 0
+   },
+   "cameraState": {
+    "isRecording": false,
+    "isShootingSinglePhoto": false,
+    "isInserted": true,
+    "isInitializing": false,
+    "hasError": false,
+    "isVerified": true,
+    "isFull": true,
+    "isFormatted": true,
+    "isFormatting": false,
+    "isInvalidFormat": false,
+    "isReadOnly": false,
+    "totalSpaceInMB": 243827,
+    "remainingSpaceInMB": 205026,
+    "availableCaptureCount": 5314,
+    "availableRecordingTimeInSeconds": 17265,
+    "index": 0,
+    "mode": "ShootPhoto"
+   },
+   "gimbalState": {
+    "atitude": {
+     "pitch": 0,
+     "roll": 0,
+     "yaw": -89.800003051757812
+    },
+    "fineTunedRoll": 0,
+    "fineTunedPitch": 0,
+    "fineTunedYaw": 0,
+    "isRollAtStop": false,
+    "isYawAtStop": false,
+    "isPitchAtStop": false,
+    "yawRelativeToAircraftHeading": 0,
+    "mode": "YawFollow",
+    "index": 0
+   },
+   "rcHardwareState": {
+    "leftStick": {
+     "horizontalPosition": 660,
+     "verticalPosition": -660
+    },
+    "rightStick": {
+     "horizontalPosition": -660,
+     "verticalPosition": -660
+    },
+    "leftWheel": 0,
+    "rightWheel": {
+     "isPresent": true,
+     "isTurned": false,
+     "isClicked": false,
+     "value": 0
+    },
+    "flightModeSwitch": "Three",
+    "goHomeButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "recordButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "shutterButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "style": "Unknown"
+   },
+   "batteryState": {
+    "voltage": 12827,
+    "current": -1234,
+    "temperature": 25.200000000000003,
+    "cellVoltages": [],
+    "chargeRemainingInPercent": 96,
+    "lowBatteryWarningThreshold": -1,
+    "seriousLowBatteryWarningThreshold": -1,
+    "index": -1,
+    "lifetimeRemaining": 0,
+    "designCapacity": 906240,
+    "numberOfDischarges": 1792,
+    "isInSingleBatteryMode": false,
+    "fullChargeCapacity": 3318,
+    "chargeRemaining": 3173
+   },
+   "airLinkState": {
+    "downlinkSignalQuality": 0,
+    "hasDownlinkSignalQuality": false,
+    "uplinkSignalQuality": 0,
+    "hasUplinkSignalQuality": false
+   },
+   "visionState": {
+    "collisionAvoidanceEnabled": true,
+    "controlState": {
+     "isAscentLimitedByObstacle": false,
+     "isAvoidingActiveObstacleCollision": false,
+     "isBraking": false,
+     "isPerformingPrecisionLanding": false
+    },
+    "detectionStateMap": {
+     "2": {
+      "position": "Right",
+      "isSensorBeingUsed": false,
+      "systemWarning": "VisionSystemInvalid",
+      "obstacleDistanceInMeters": 0,
+      "detectionSectors": []
+     }
+    }
+   },
+   "gimbalsState": {
+    "0": {
+     "atitude": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": -89.800003051757812
+     },
+     "fineTunedRoll": 0,
+     "fineTunedPitch": 0,
+     "fineTunedYaw": 0,
+     "isRollAtStop": false,
+     "isYawAtStop": false,
+     "isPitchAtStop": false,
+     "yawRelativeToAircraftHeading": 0,
+     "mode": "YawFollow",
+     "index": 0
+    }
+   },
+   "camerasState": {
+    "0": {
+     "isRecording": false,
+     "isShootingSinglePhoto": false,
+     "isInserted": true,
+     "isInitializing": false,
+     "hasError": false,
+     "isVerified": true,
+     "isFull": true,
+     "isFormatted": true,
+     "isFormatting": false,
+     "isInvalidFormat": false,
+     "isReadOnly": false,
+     "totalSpaceInMB": 243827,
+     "remainingSpaceInMB": 205026,
+     "availableCaptureCount": 5314,
+     "availableRecordingTimeInSeconds": 17265,
+     "index": 0,
+     "mode": "ShootPhoto"
+    }
+   },
+   "batteriesState": {
+    "0": {
+     "voltage": 12827,
+     "current": -1234,
+     "temperature": 25.200000000000003,
+     "cellVoltages": [],
+     "chargeRemainingInPercent": 96,
+     "lowBatteryWarningThreshold": -1,
+     "seriousLowBatteryWarningThreshold": -1,
+     "index": -1,
+     "lifetimeRemaining": 0,
+     "designCapacity": 906240,
+     "numberOfDischarges": 1792,
+     "isInSingleBatteryMode": false,
+     "fullChargeCapacity": 3318,
+     "chargeRemaining": 3173
+    }
+   }
+  },
+  {
+   "flightControllerState": {
+    "attitude": {
+     "pitch": 23,
+     "roll": 16,
+     "yaw": -904
+    },
+    "takeoffLocationAltitude": 0,
+    "aircraftLocation": {
+     "latitude": 0,
+     "longitude": 0
+    },
+    "altitude": 0,
+    "flightMode": "MotorsJustStarted",
+    "GPSSignalLevel": "Level0",
+    "satelliteCount": 0,
+    "remainingFlightTime": 0,
+    "batteryPercentageNeededToLandFromCurrentHeight": 0,
+    "batteryPercentageNeededToGoHome": 0,
+    "smartRTHState": "Unknown",
+    "behavior": "GoHome",
+    "isFailsafeEnabled": false,
+    "areMotorsOn": true,
+    "isHomeLocationSet": false,
+    "isLandingConfirmationNeeded": false,
+    "hasReachedMaxFlightHeight": false,
+    "hasReachedMaxFlightRadius": false,
+    "windWarning": "Unknown",
+    "countOfFlights": 1,
+    "flightLogIndex": 0,
+    "isFlying": false,
+    "smartRTHCountdown": 0,
+    "velocity": {
+     "velocityX": 0,
+     "velocityY": 0,
+     "velocityZ": 0
+    },
+    "isGPSBeingUsed": false,
+    "flightTimeInSeconds": 0.20000000298023224,
+    "cumulativeFlightDistance": 0
+   },
+   "cameraState": {
+    "isRecording": false,
+    "isShootingSinglePhoto": false,
+    "isInserted": true,
+    "isInitializing": false,
+    "hasError": false,
+    "isVerified": true,
+    "isFull": true,
+    "isFormatted": true,
+    "isFormatting": false,
+    "isInvalidFormat": false,
+    "isReadOnly": false,
+    "totalSpaceInMB": 243827,
+    "remainingSpaceInMB": 205026,
+    "availableCaptureCount": 5314,
+    "availableRecordingTimeInSeconds": 17265,
+    "index": 0,
+    "mode": "ShootPhoto"
+   },
+   "gimbalState": {
+    "atitude": {
+     "pitch": 0,
+     "roll": 0,
+     "yaw": -89.800003051757812
+    },
+    "fineTunedRoll": 0,
+    "fineTunedPitch": 0,
+    "fineTunedYaw": 0,
+    "isRollAtStop": false,
+    "isYawAtStop": false,
+    "isPitchAtStop": false,
+    "yawRelativeToAircraftHeading": 0,
+    "mode": "YawFollow",
+    "index": 0
+   },
+   "rcHardwareState": {
+    "leftStick": {
+     "horizontalPosition": 660,
+     "verticalPosition": -660
+    },
+    "rightStick": {
+     "horizontalPosition": -660,
+     "verticalPosition": -660
+    },
+    "leftWheel": 0,
+    "rightWheel": {
+     "isPresent": true,
+     "isTurned": false,
+     "isClicked": false,
+     "value": 0
+    },
+    "flightModeSwitch": "Three",
+    "goHomeButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "recordButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "shutterButton": {
+     "isPresent": true,
+     "isClicked": false
+    },
+    "style": "Unknown"
+   },
+   "batteryState": {
+    "voltage": 12827,
+    "current": -1234,
+    "temperature": 25.200000000000003,
+    "cellVoltages": [],
+    "chargeRemainingInPercent": 96,
+    "lowBatteryWarningThreshold": -1,
+    "seriousLowBatteryWarningThreshold": -1,
+    "index": -1,
+    "lifetimeRemaining": 0,
+    "designCapacity": 906240,
+    "numberOfDischarges": 1792,
+    "isInSingleBatteryMode": false,
+    "fullChargeCapacity": 3318,
+    "chargeRemaining": 3173
+   },
+   "airLinkState": {
+    "downlinkSignalQuality": 0,
+    "hasDownlinkSignalQuality": false,
+    "uplinkSignalQuality": 0,
+    "hasUplinkSignalQuality": false
+   },
+   "visionState": {
+    "collisionAvoidanceEnabled": true,
+    "controlState": {
+     "isAscentLimitedByObstacle": false,
+     "isAvoidingActiveObstacleCollision": false,
+     "isBraking": false,
+     "isPerformingPrecisionLanding": false
+    },
+    "detectionStateMap": {
+     "2": {
+      "position": "Right",
+      "isSensorBeingUsed": false,
+      "systemWarning": "VisionSystemInvalid",
+      "obstacleDistanceInMeters": 0,
+      "detectionSectors": []
+     }
+    }
+   },
+   "gimbalsState": {
+    "0": {
+     "atitude": {
+      "pitch": 0,
+      "roll": 0,
+      "yaw": -89.800003051757812
+     },
+     "fineTunedRoll": 0,
+     "fineTunedPitch": 0,
+     "fineTunedYaw": 0,
+     "isRollAtStop": false,
+     "isYawAtStop": false,
+     "isPitchAtStop": false,
+     "yawRelativeToAircraftHeading": 0,
+     "mode": "YawFollow",
+     "index": 0
+    }
+   },
+   "camerasState": {
+    "0": {
+     "isRecording": false,
+     "isShootingSinglePhoto": false,
+     "isInserted": true,
+     "isInitializing": false,
+     "hasError": false,
+     "isVerified": true,
+     "isFull": true,
+     "isFormatted": true,
+     "isFormatting": false,
+     "isInvalidFormat": false,
+     "isReadOnly": false,
+     "totalSpaceInMB": 243827,
+     "remainingSpaceInMB": 205026,
+     "availableCaptureCount": 5314,
+     "availableRecordingTimeInSeconds": 17265,
+     "index": 0,
+     "mode": "ShootPhoto"
+    }
+   },
+   "batteriesState": {
+    "0": {
+     "voltage": 12827,
+     "current": -1234,
+     "temperature": 25.200000000000003,
+     "cellVoltages": [],
+     "chargeRemainingInPercent": 96,
+     "lowBatteryWarningThreshold": -1,
+     "seriousLowBatteryWarningThreshold": -1,
+     "index": -1,
+     "lifetimeRemaining": 0,
+     "designCapacity": 906240,
+     "numberOfDischarges": 1792,
+     "isInSingleBatteryMode": false,
+     "fullChargeCapacity": 3318,
+     "chargeRemaining": 3173
+    }
+   }
+  }
+ ]
+}
+}
